@@ -1,0 +1,5 @@
+# Cloudflare / Netlify redirects
+https://www.yourcouponbox.com/* https://yourcouponbox.com/:splat 301!
+
+# Fallback for dynamic coupons
+/assets/php/coupons.php /assets/php/coupons.json 200

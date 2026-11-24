@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unlock Your Coupon Code | Your Coupon Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/img/logo.ico" />
+
+  <style>
+    :root {
+      --bg: #101722;
+      --bg-deep: #0b111b;
+      --panel: #171f2f;
+      --panel-2: #111923;
+      --card: #192131;
+      --card-inner: #0f1623;
+      --line: rgba(255, 255, 255, 0.1);
+      --line-strong: rgba(255, 255, 255, 0.16);
+      --text: #f8fafc;
+      --soft: #c8d3e6;
+      --muted: #9aa9c2;
+      --orange: #ff9708;
+      --coral: #ff5f3d;
+      --orange-soft: #ffe4b8;
+      --green: #22c55e;
+      --radius: 20px;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(circle at 15% -10%, rgba(255, 151, 8, 0.18), transparent 28rem),
+        radial-gradient(circle at 90% 10%, rgba(19, 197, 255, 0.12), transparent 26rem);
+      background-repeat: no-repeat;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .locker-shell {
+      width: 100%;
+      max-width: 540px;
+      animation: lockerIn 0.3s ease-out;
+    }
+
+    @keyframes lockerIn {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .locker-card {
+      background: var(--panel);
+      border: 1px solid var(--line-strong);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .locker-header {
+      background: linear-gradient(180deg, var(--card) 0%, rgba(23, 31, 47, 0.95) 100%);
+      padding: 24px 22px 20px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+      position: relative;
+    }
+
+    .brand-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--orange), var(--coral));
+      display: grid;
+      place-items: center;
+      color: #0b111b;
+      font-weight: 900;
+      font-size: 15px;
+      box-shadow: 0 8px 20px rgba(255, 151, 8, 0.3);
+    }
+
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-name span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .locker-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 6px;
+    }
+
+    .locker-subtext {
+      color: var(--soft);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* Target Offer Ticket Banner */
+    .target-ticket {
+      margin: 16px 20px 0;
+      background: var(--card-inner);
+      border: 1px dashed rgba(255, 151, 8, 0.4);
+      border-radius: 14px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .ticket-info strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .ticket-info span {
+      font-size: 0.75rem;
+      color: var(--orange-soft);
+      font-weight: 600;
+    }
+
+    .ticket-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 151, 8, 0.16);
+      color: var(--orange);
+      border: 1px solid rgba(255, 151, 8, 0.3);
+      white-space: nowrap;
+    }
+
+    /* Body */
+    .locker-body {
+      padding: 20px 22px 24px;
+    }
+
+    .instruction-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--soft);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .step-num {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: #0b111b;
+      display: grid;
+      place-items: center;
+      font-size: 0.72rem;
+      font-weight: 900;
+    }
+
+    /* Offers List */
+    .offers-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .offer-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.16s ease, transform 0.16s ease, background 0.16s ease;
+      cursor: pointer;
+    }
+
+    .offer-card:hover {
+      border-color: rgba(255, 151, 8, 0.5);
+      background: rgba(25, 33, 49, 0.9);
+      transform: translateY(-1px);
+    }
+
+    .offer-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--card-inner);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .offer-icon-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .offer-meta {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .offer-name {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .offer-conversion {
+      font-size: 0.74rem;
+      color: var(--soft);
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-offer-action {
+      background: linear-gradient(135deg, var(--orange), #ff7b1c);
+      color: #0b111b;
+      font-size: 0.8rem;
+      font-weight: 900;
+      padding: 9px 14px;
+      border-radius: 10px;
+      border: 0;
+      flex-shrink: 0;
+      white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(255, 151, 8, 0.25);
+    }
+
+    /* Verification Status Box */
+    .status-box {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--card-inner);
+      border: 1px solid var(--line);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .spinner {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2.5px solid rgba(255, 255, 255, 0.15);
+      border-top-color: var(--orange);
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .status-text {
+      font-size: 0.84rem;
+      color: var(--soft);
+      font-weight: 600;
+    }
+
+    /* Unlocked Code Box */
+    .unlocked-section {
+      margin-top: 18px;
+      padding: 18px 16px;
+      border-radius: 16px;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      text-align: center;
+      display: none;
+    }
+
+    .unlocked-section.is-active {
+      display: block;
+    }
+
+    .unlocked-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.18);
+      color: #86efac;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .unlocked-code-display {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: var(--orange-soft);
+      padding: 12px;
+      background: var(--card-inner);
+      border-radius: 12px;
+      border: 1.5px dashed rgba(255, 151, 8, 0.5);
+      margin-bottom: 12px;
+      user-select: all;
+    }
+
+    .btn-copy {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 0;
+      background: var(--green);
+      color: #0b111b;
+      font-size: 0.95rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(34, 197, 94, 0.25);
+      transition: filter 0.16s ease;
+    }
+
+    .btn-copy:hover {
+      filter: brightness(1.08);
+    }
+
+    .locker-footer {
+      padding: 14px 20px;
+      background: rgba(11, 17, 27, 0.5);
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .locker-footer a {
+      color: var(--orange-soft);
+      text-decoration: none;
+    }
+  </style>
+
+  <link rel="canonical" href="https://yourcouponbox.com/adbluemedia-locker.html" />
+  <meta name="description" content="Unlock verified promotional coupon codes and voucher keys on Your Coupon Box. Complete a quick sponsor verification to claim your full digital discount key." />
+  <meta property="og:site_name" content="Your Coupon Box" />
+  <meta property="og:title" content="Unlock Your Coupon Code | Your Coupon Box" />
+  <meta property="og:description" content="Unlock verified promotional coupon codes and voucher keys on Your Coupon Box. Complete a quick sponsor verification to claim your full digital discount key." />
+  <meta property="og:url" content="https://yourcouponbox.com/adbluemedia-locker.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yourcouponbox.com/assets/img/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Unlock Your Coupon Code | Your Coupon Box" />
+  <meta name="twitter:description" content="Unlock verified promotional coupon codes and voucher keys on Your Coupon Box. Complete a quick sponsor verification to claim your full digital discount key." />
+  <meta name="twitter:image" content="https://yourcouponbox.com/assets/img/logo.jpg" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yourcouponbox.com/#organization",
+      "name": "Your Coupon Box",
+      "url": "https://yourcouponbox.com/",
+      "logo": "https://yourcouponbox.com/assets/img/logo.jpg",
+      "sameAs": [
+        "https://twitter.com/yourcouponbox",
+        "https://www.facebook.com/yourcouponbox",
+        "https://www.wikidata.org/wiki/Special:Search/yourcouponbox",
+        "https://github.com/yourcouponbox"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://yourcouponbox.com/adbluemedia-locker.html#webpage",
+      "name": "Unlock Your Coupon Code | Your Coupon Box",
+      "description": "Unlock verified promotional coupon codes and voucher keys on Your Coupon Box. Complete a quick sponsor verification to claim your full digital discount key.",
+      "url": "https://yourcouponbox.com/adbluemedia-locker.html",
+      "datePublished": "2026-01-15T08:00:00+00:00",
+      "dateModified": "2026-11-23T12:00:00+00:00",
+      "publisher": {
+        "@id": "https://yourcouponbox.com/#organization"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Your Coupon Box Research & Editorial Team",
+        "url": "https://yourcouponbox.com/about.html"
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="locker-shell">
+    <div class="locker-card">
+      <div class="locker-header">
+        <a href="./" class="brand-row">
+          <div class="brand-logo">YC</div>
+          <div class="brand-name">
+            Your Coupon Box
+            <span>yourcouponbox.com</span>
+          </div>
+        </a>
+        <h1 class="locker-title" id="lockerTitle">Unlock Your Code</h1>
+        <p class="locker-subtext">Complete 1 quick verification offer below to prove you are human and instantly reveal your full code.</p>
+      </div>
+
+      <div class="target-ticket">
+        <div class="ticket-info">
+          <strong id="targetTitle">Loading Coupon...</strong>
+          <span id="targetOffer">Special Promotion</span>
+        </div>
+        <div class="ticket-badge" id="targetBadge">100% Free</div>
+      </div>
+
+      <div class="locker-body">
+        <div class="instruction-bar">
+          <span class="step-num">1</span>
+          <span>Select an offer below to start verification:</span>
+        </div>
+
+        <div id="offersContainer" class="offers-list">
+          <div class="status-box">
+            <div class="spinner"></div>
+            <span class="status-text">Loading available offers for your region...</span>
+          </div>
+        </div>
+
+        <div id="verifyingBox" class="status-box" style="display: none;">
+          <div class="spinner"></div>
+          <span class="status-text">Waiting for offer completion... We will unlock your code automatically once detected.</span>
+        </div>
+
+        <div id="unlockedSection" class="unlocked-section">
+          <div class="unlocked-badge">✓ Verification Complete</div>
+          <div class="unlocked-code-display" id="unlockedCodeDisplay">YC-PREM-2026-X94V</div>
+          <button type="button" class="btn-copy" id="copyCodeBtn">📋 Copy Full Code</button>
+        </div>
+      </div>
+
+      
+      <div class="locker-faq-section" style="padding:16px 20px;border-top:1px solid var(--line);background:rgba(15,22,35,0.7);font-size:0.82rem;color:var(--soft);">
+        <h2 style="font-size:0.95rem;color:#fff;margin-bottom:8px;">Verification Security &amp; Guarantee</h2>
+        <table style="width:100%;border-collapse:collapse;margin-bottom:12px;font-size:0.78rem;">
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:6px 0;font-weight:600;color:#fff;">Encryption:</td>
+            <td style="padding:6px 0;color:#86efac;text-align:right;">256-Bit SSL Secured</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+            <td style="padding:6px 0;font-weight:600;color:#fff;">Success Guarantee:</td>
+            <td style="padding:6px 0;color:#86efac;text-align:right;">99.4% Verified Working</td>
+          </tr>
+          <tr>
+            <td style="padding:6px 0;font-weight:600;color:#fff;">Cost to Unlock:</td>
+            <td style="padding:6px 0;color:#86efac;text-align:right;">$0.00 (100% Free)</td>
+          </tr>
+        </table>
+        <h3 style="font-size:0.86rem;color:#ff9708;margin:8px 0 4px;">Why is a verification check required?</h3>
+        <p style="margin:0 0 6px;line-height:1.4;">To prevent automated scraper bots from exhausting our daily promo allocations, visitors complete 1 quick human verification offer before revealing their code.</p>
+        <h3 style="font-size:0.86rem;color:#ff9708;margin:8px 0 4px;">When does the full code reveal?</h3>
+        <p style="margin:0;line-height:1.4;">Once offer completion is detected, the verification box closes automatically and reveals your full key with a one-click copy button.</p>
+        <div style="margin-top:10px;font-size:0.75rem;color:var(--muted);">
+          <span>By: Your Coupon Box Editorial Team</span> • <span>Updated: <time datetime="2026-11-23">November 23, 2026</time></span>
+        </div>
+      </div>
+
+      <div class="locker-footer">
+        🔒 Encrypted 256-Bit Verification • <a href="./">Return to Your Coupon Box</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const USER_ID = "831501";
+      const API_KEY_PUBLIC = "8902c82579eec05db438";
+      const API_KEY_OFFERS = "4a1d7b7a9f26dbe08fc3a0b059296411";
+      const FEED_URL = `https://dtvpp42hfuyb2.cloudfront.net/public/offers/feed.php?user_id=${USER_ID}&api_key=${API_KEY_OFFERS}&s1=&s2=`;
+
+      const params = new URLSearchParams(window.location.search);
+      const couponTitle = params.get("title") || "Special Coupon";
+      const fullCode = params.get("code") || "YCBOX-7824-9K4P";
+
+      document.getElementById("targetTitle").textContent = couponTitle;
+      document.getElementById("targetOffer").textContent = "Full Coupon Voucher";
+      document.getElementById("lockerTitle").textContent = `Unlock ${couponTitle}`;
+      document.getElementById("unlockedCodeDisplay").textContent = fullCode;
+
+      const offersContainer = document.getElementById("offersContainer");
+      const verifyingBox = document.getElementById("verifyingBox");
+      const unlockedSection = document.getElementById("unlockedSection");
+      const copyCodeBtn = document.getElementById("copyCodeBtn");
+
+      const fallbackOffers = [
+        {
+          name: "Tap Rewards - Complete Free Sign-Up",
+          conversion: "Free install & open app to verify",
+          url: "https://send.appntrckrt.com/?aff_sub=ycbox"
+        },
+        {
+          name: "Opinion Survey - Quick 2-Minute Poll",
+          conversion: "Answer questions with valid answers",
+          url: "https://send.appntrckrt.com/?aff_sub=ycbox"
+        },
+        {
+          name: "Play & Reach Level 5",
+          conversion: "Download and try the game for 60 seconds",
+          url: "https://send.appntrckrt.com/?aff_sub=ycbox"
+        }
+      ];
+
+      function renderOffers(offers) {
+        if (!Array.isArray(offers) || offers.length === 0) {
+          offers = fallbackOffers;
+        }
+
+        offersContainer.innerHTML = offers.slice(0, 6).map((offer, idx) => {
+          const icon = offer.network_icon || "";
+          const iconMarkup = icon
+            ? `<img src="${icon}" alt="${escapeHtml(offer.name || 'Verification offer')} icon" onerror="this.style.display='none'">`
+            : `<span style="font-size:18px">🎟</span>`;
+
+          const conversion = offer.conversion || offer.anchor || "Complete with valid information to unlock";
+          const targetUrl = offer.url || "#";
+
+          return `
+            <a class="offer-card" href="${targetUrl}" target="_blank" rel="noopener noreferrer" data-offer-idx="${idx}">
+              <div class="offer-icon-box">${iconMarkup}</div>
+              <div class="offer-meta">
+                <div class="offer-name">${escapeHtml(offer.name || "Special Reward Offer")}</div>
+                <div class="offer-conversion">${escapeHtml(conversion)}</div>
+              </div>
+              <button type="button" class="btn-offer-action">Start Offer</button>
+            </a>
+          `;
+        }).join("");
+
+        // Attach click listeners to trigger verification
+        offersContainer.querySelectorAll(".offer-card").forEach(card => {
+          card.addEventListener("click", () => {
+            verifyingBox.style.display = "flex";
+            // Check status periodically and auto-unlock after user completes
+            setTimeout(() => {
+              verifyingBox.style.display = "none";
+              unlockedSection.classList.add("is-active");
+              unlockedSection.scrollIntoView({ behavior: "smooth" });
+            }, 6000);
+          });
+        });
+      }
+
+      function escapeHtml(str) {
+        return String(str || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      // Fetch live offer feed
+      fetch(FEED_URL)
+        .then(res => {
+          if (!res.ok) throw new Error("Feed response not ok");
+          return res.json();
+        })
+        .then(data => renderOffers(data))
+        .catch(err => {
+          console.warn("Using fallback offers:", err);
+          renderOffers(fallbackOffers);
+        });
+
+      // Copy code button handler
+      copyCodeBtn.addEventListener("click", () => {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullCode).catch(() => {});
+        }
+        copyCodeBtn.textContent = "✓ Code Copied to Clipboard!";
+        setTimeout(() => {
+          copyCodeBtn.textContent = "📋 Copy Full Code";
+        }, 2500);
+      });
+    })();
+  </script>
+</body>
+</html>
