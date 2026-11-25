@@ -30,4 +30,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://yourcouponbox.com/sitemap.xml
+Sitemap: https://yourcouponbox.comee.online/sitemap.xml
