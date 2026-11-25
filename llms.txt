@@ -10,7 +10,7 @@ Your Coupon Box verifies discount codes daily so users can unlock working reward
 - Categories: Streaming, Gaming, AI Tools, Music, Video Editing, Software, Rewards
 
 ## Verification & Trust
-- About Us: https://yourcouponbox.comee.online/about.html
-- Contact: https://yourcouponbox.comee.online/contact.html
-- Privacy Policy: https://yourcouponbox.comee.online/privacy.html
-- Terms of Service: https://yourcouponbox.comee.online/terms.html
+- About Us: https://yourcouponbox.comee.online/about
+- Contact: https://yourcouponbox.comee.online/contact
+- Privacy Policy: https://yourcouponbox.comee.online/privacy
+- Terms of Service: https://yourcouponbox.comee.online/terms
