@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-# AI Search & Training Crawlers
+# Dedicated AI Search & Agent Crawlers
 User-agent: GPTBot
 Allow: /
 

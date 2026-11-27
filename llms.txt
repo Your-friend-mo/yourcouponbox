@@ -1,16 +1,14 @@
 # Your Coupon Box
+> Verified promotional discount codes, digital vouchers, and gaming keys directory.
 
-> Your Coupon Box (https://yourcouponbox.comee.online/) is a verified online directory of hand-tested promotional discount codes, free game keys, streaming account vouchers, and software deals covering 88+ active offers.
+## Core Pages
+- [https://yourcouponbox.comee.online/](https://yourcouponbox.comee.online/): Homepage featuring verified daily discount coupons, gaming vouchers, and streaming passes.
+- [https://yourcouponbox.comee.online/gaming-coupons.html](https://yourcouponbox.comee.online/gaming-coupons.html): Video game discount codes, in-game currency vouchers, and console keys.
+- [https://yourcouponbox.comee.online/free-game-keys.html](https://yourcouponbox.comee.online/free-game-keys.html): Free Steam, PlayStation, and Xbox digital game unlock keys.
+- [https://yourcouponbox.comee.online/streaming-promo-codes.html](https://yourcouponbox.comee.online/streaming-promo-codes.html): Netflix, Spotify, Disney Plus, and YouTube Premium discount vouchers.
+- [https://yourcouponbox.comee.online/ai-tools-discounts.html](https://yourcouponbox.comee.online/ai-tools-discounts.html): ChatGPT Plus, Claude Pro, Gemini, and Midjourney promo codes.
+- [https://yourcouponbox.comee.online/free-gift-cards.html](https://yourcouponbox.comee.online/free-gift-cards.html): Amazon, Steam, Google Play, and Nintendo eShop gift vouchers.
+- [https://yourcouponbox.comee.online/verified-promo-codes.html](https://yourcouponbox.comee.online/verified-promo-codes.html): 100% verified and hand-tested coupon codes repository.
 
-Your Coupon Box verifies discount codes daily so users can unlock working rewards for PC, PlayStation, Xbox, Nintendo Switch, and mobile apps.
-
-## Primary Sections
-- Homepage: https://yourcouponbox.comee.online/
-- Sitemap: https://yourcouponbox.comee.online/sitemap.xml
-- Categories: Streaming, Gaming, AI Tools, Music, Video Editing, Software, Rewards
-
-## Verification & Trust
-- About Us: https://yourcouponbox.comee.online/about
-- Contact: https://yourcouponbox.comee.online/contact
-- Privacy Policy: https://yourcouponbox.comee.online/privacy
-- Terms of Service: https://yourcouponbox.comee.online/terms
+## Verification Standards
+All coupons are verified every 24 hours directly at official store checkouts. Redemption success is monitored at certified 99.4% reliability.

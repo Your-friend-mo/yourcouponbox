@@ -29,7 +29,18 @@ const SEARCH_ALIASES = {
   robux: ["roblox", "robux"],
   minecoins: ["minecraft", "minecoins"],
   vbucks: ["fortnite", "v-bucks", "vbucks"],
-  fifa: ["ea sports fc", "fc26", "fc 26"]
+  fifa: ["ea sports fc", "fc26", "fc 26", "fc 27", "fc27"],
+  valorant: ["vp", "valorant points", "riot", "riot games"],
+  brawl: ["brawl stars", "supercell", "gems"],
+  clash: ["clash royale", "supercell"],
+  apex: ["apex legends", "respawn", "ea coins"],
+  genshin: ["genshin impact", "primogems", "hoyoverse", "mihoyo"],
+  freefire: ["free fire", "garena", "diamonds"],
+  pubg: ["pubg mobile", "uc", "unknown cash", "krafton"],
+  steam: ["valve", "steam wallet", "steam gift card"],
+  nintendo: ["switch", "eshop", "nintendo switch", "gift card"],
+  elden: ["elden ring", "nightreign", "fromsoftware"],
+  re9: ["resident evil", "resident evil 9", "capcom", "biohazard"]
 };
 
 function normalizeSearchText(text) {
